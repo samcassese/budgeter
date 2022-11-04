@@ -3,6 +3,7 @@
 - dollar amounts rounded to 2 decimal points
 - uses classes
 - constant for days in a month
+- monthly vs daily income/expenses math
 
 */
 
@@ -11,6 +12,8 @@ import java.util.*;
 class Main {
   
   public static void main(String[] args) {
+
+    int DAYS_IN_MONTH = 31;
 
     int incomeCount = 0;
     int expensesCount = 0;
@@ -50,7 +53,7 @@ class Main {
 
 
     // ask # of categories of expenses
-    System.out.print("How many categories of income? ");
+    System.out.print("How many categories of expenses? ");
 
     int expenseCategories = scanner.nextInt();
 
@@ -72,10 +75,10 @@ class Main {
 /////////////////////////
     */
 
-
+    System.out.println();
 
     // prints total income (monthly and daily)
-
+    System.out.println("Total income = $" + income);
 
     // prints total expenses (monthly and daily)
 
