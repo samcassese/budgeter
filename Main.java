@@ -18,8 +18,13 @@ class Main {
     System.out.println("This program asks for your monthly income and expenses, then tells you your net monthly income.");
     System.out.println();
 
-    // ask # of categories of income
+    // creates scanner
+    Scanner scanner = new Scanner(System.in);
 
+    // ask # of categories of income
+    System.out.print("How many categories of income? ");
+
+    int incomeCategories = scanner.nextInt();
 
     // ask each income amount
 
