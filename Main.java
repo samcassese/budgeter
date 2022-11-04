@@ -2,6 +2,7 @@
 
 - dollar amounts rounded to 2 decimal points
 - uses classes
+- constant for days in a month
 
 */
 
@@ -11,9 +12,9 @@ class Main {
   
   public static void main(String[] args) {
 
-    // constants
-    int DAYS_IN_MONTH = 31;
-    //
+    int count = 0;
+    double income = 0;
+    double expenses = 0;
     
     System.out.println("This program asks for your monthly income and expenses, then tells you your net monthly income.");
     System.out.println();
@@ -26,8 +27,16 @@ class Main {
 
     int incomeCategories = scanner.nextInt();
 
-    // ask each income amount
+    System.out.println();
 
+    // ask each income amount
+    while(count < incomeCategories) {
+      System.out.println("Next income amount? ");
+      income += scanner.nextDouble();
+
+      System.out.println(income);
+      count++;
+    }
 
     // asks if they input monthly or daily expenses
     System.out.println("Enter 1) monthly or 2) daily expenses?");
