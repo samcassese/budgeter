@@ -40,7 +40,6 @@ class Main {
       System.out.println("Next income amount? ");
       income += scanner.nextDouble();
 
-      System.out.println(income);
       incomeCount++;
     }
 
@@ -64,8 +63,13 @@ class Main {
       System.out.println("Next expense amount? ");
       expenses += scanner.nextDouble();
 
-      System.out.println(expenses);
       expensesCount++;
+    }
+
+    // calculate monthly vs daily
+
+    if(monthlyOrDaily == 2) {
+      expenses *= DAYS_IN_MONTH;
     }
 
     
@@ -78,14 +82,20 @@ class Main {
     System.out.println();
 
     // prints total income (monthly and daily)
-    System.out.println("Total income = $" + income);
+    System.out.println("Total income = $" + income + " ($" + income / DAYS_IN_MONTH + "/day)");
 
     // prints total expenses (monthly and daily)
-
+    System.out.println("Total expenses = $" + expenses + " ($" + expenses / DAYS_IN_MONTH + "/day)");
 
 
     // prints how much they earned/lost
+    if(income - expenses > 0) {
+      System.out.println("You earned $" + (income - expenses) + " more than you spent this month.");
+    }
 
+    else if(income - expenses <= 0) {
+      System.out.println("You spent $" + (expenses - income) + " more than you earned this month.");
+    }
     
 
     // prints big saver/spender message
