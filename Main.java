@@ -81,13 +81,27 @@ class Main {
     */
 
     System.out.println();
+
+    // rounding income and expenses to 2 decimal points
+    double dailyIncome = income / DAYS_IN_MONTH;
+
+    dailyIncome = Math.round(dailyIncome * 100);
+    dailyIncome = dailyIncome / 100;
+
+
+    double dailyExpenses = expenses / DAYS_IN_MONTH;
+
+    dailyExpenses = Math.round(dailyExpenses * 100);
+    dailyExpenses = dailyExpenses / 100;
+    
+    
     
 
     // prints total income (monthly and daily)
-    System.out.println("Total income = $" + income + " ($" + income / DAYS_IN_MONTH + "/day)");
+    System.out.println("Total income = $" + income + " ($" + dailyIncome + "/day)");
 
     // prints total expenses (monthly and daily)
-    System.out.println("Total expenses = $" + expenses + " ($" + expenses / DAYS_IN_MONTH + "/day)");
+    System.out.println("Total expenses = $" + expenses + " ($" + dailyExpenses + "/day)");
 
 
     
