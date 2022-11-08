@@ -37,7 +37,7 @@ class Main {
 
     // ask each income amount
     while(incomeCount < incomeCategories) {
-      System.out.print("  Next income amount? ");
+      System.out.print("    Next income amount? $");
 
       income += scanner.nextDouble();
 
@@ -58,7 +58,7 @@ class Main {
 
     // ask each expense amount
     while(expensesCount < expenseCategories) {
-      System.out.print("  Next expense amount? ");
+      System.out.print("    Next expense amount? $");
 
       expenses += scanner.nextDouble();
 
