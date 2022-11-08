@@ -109,6 +109,20 @@ class Main {
       System.out.print("saver.");
     }
 
+    else if(expenses - income > 250) {
+      System.out.print("big spender.");
+    }
+
+    else if(expenses - income > 0) {
+      System.out.print("spender.");
+    }
+
+    else {
+      System.out.print("zero.");
+    }
+
+    // custom message
+
 
 
     
