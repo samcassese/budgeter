@@ -122,7 +122,7 @@ class Main {
     }
 
     // custom message
-    System.out.print("<< your custom message here >>");
+    System.out.print("\n<< your custom message here >>");
 
 
     
