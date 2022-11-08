@@ -37,7 +37,8 @@ class Main {
 
     // ask each income amount
     while(incomeCount < incomeCategories) {
-      System.out.println("Next income amount? ");
+      System.out.print("  Next income amount? ");
+
       income += scanner.nextDouble();
 
       incomeCount++;
@@ -46,25 +47,25 @@ class Main {
     System.out.println();
     
     // asks if they input monthly or daily expenses
-    System.out.println("Enter 1) monthly or 2) daily expenses?");
+    System.out.print("Enter 1) monthly or 2) daily expenses? ");
 
     int monthlyOrDaily = scanner.nextInt();
-
 
     // ask # of categories of expenses
     System.out.print("How many categories of expenses? ");
 
     int expenseCategories = scanner.nextInt();
 
-    System.out.println();
-
     // ask each expense amount
     while(expensesCount < expenseCategories) {
-      System.out.println("Next expense amount? ");
+      System.out.print("  Next expense amount? ");
+
       expenses += scanner.nextDouble();
 
       expensesCount++;
     }
+
+    System.out.println();
 
     // calculate monthly vs daily
 
@@ -80,6 +81,7 @@ class Main {
     */
 
     System.out.println();
+    
 
     // prints total income (monthly and daily)
     System.out.println("Total income = $" + income + " ($" + income / DAYS_IN_MONTH + "/day)");
@@ -87,6 +89,10 @@ class Main {
     // prints total expenses (monthly and daily)
     System.out.println("Total expenses = $" + expenses + " ($" + expenses / DAYS_IN_MONTH + "/day)");
 
+
+    
+    System.out.println();
+    
 
     // prints how much they earned/lost
     if(income - expenses > 0) {
@@ -98,6 +104,7 @@ class Main {
     }
     
 
+    
     // prints big saver/spender message
     System.out.print("You're a ");
 
