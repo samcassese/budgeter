@@ -99,7 +99,18 @@ class Main {
     
 
     // prints big saver/spender message
-    
+    System.out.print("You're a ");
+
+    if(income - expenses > 250) {
+      System.out.print("big saver.");
+    }
+
+    else if(income - expenses > 0) {
+      System.out.print("saver.");
+    }
+
+
+
     
   }
   
