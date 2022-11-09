@@ -1,9 +1,6 @@
 /*
 
-- dollar amounts rounded to 2 decimal points
 - uses classes
-- constant for days in a month
-- monthly vs daily income/expenses math
 
 */
 
@@ -13,7 +10,7 @@ class Main {
   
   public static void main(String[] args) {
 
-    int DAYS_IN_MONTH = 31;
+    int DAYS_IN_MONTH = 30; // default 31, changed for tests
 
     int incomeCount = 0;
     int expensesCount = 0;
