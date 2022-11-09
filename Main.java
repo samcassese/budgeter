@@ -93,8 +93,15 @@ class Main {
 
     dailyExpenses = Math.round(dailyExpenses * 100);
     dailyExpenses = dailyExpenses / 100;
-    
-    
+
+
+
+    income = Math.round(income * 100);
+    income = income / 100;
+
+
+    expenses = Math.round(expenses * 100);
+    expenses = expenses / 100;
     
 
     // prints total income (monthly and daily)
@@ -106,15 +113,23 @@ class Main {
 
     
     System.out.println();
+
+
+    // rounds earned/spent message to 2 decimal points
+    double earnedSpent = income - expenses;
+
+    earnedSpent = Math.round(earnedSpent * 100);
+    earnedSpent = earnedSpent / 100;
+    
     
 
     // prints how much they earned/lost
-    if(income - expenses > 0) {
-      System.out.println("You earned $" + (income - expenses) + " more than you spent this month.");
+    if(earnedSpent > 0) {
+      System.out.println("You earned $" + (earnedSpent) + " more than you spent this month.");
     }
 
-    else if(income - expenses <= 0) {
-      System.out.println("You spent $" + (expenses - income) + " more than you earned this month.");
+    else if(earnedSpent <= 0) {
+      System.out.println("You spent $" + (earnedSpent) + " more than you earned this month.");
     }
     
 
