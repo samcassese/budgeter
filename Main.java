@@ -116,7 +116,7 @@ class Main {
 
     
     // declares variable for rounding/printing
-    double earnedSpent = 0;
+    double earnedSpent = income - expenses;
     
     
 
