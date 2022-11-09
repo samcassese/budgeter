@@ -22,7 +22,7 @@ class Main {
 
     System.out.println();
     
-    System.out.println("This program asks for your monthly income and expenses, then tells you your net monthly income.");
+    System.out.println("This program asks for your monthly income and\nexpenses, then tells you your net monthly income.");
     System.out.println();
 
     // creates scanner
@@ -114,21 +114,32 @@ class Main {
     
     System.out.println();
 
-
-    // rounds earned/spent message to 2 decimal points
-    double earnedSpent = income - expenses;
-
-    earnedSpent = Math.round(earnedSpent * 100);
-    earnedSpent = earnedSpent / 100;
+    
+    // declares variable for rounding/printing
+    double earnedSpent = 0;
     
     
 
     // prints how much they earned/lost
     if(earnedSpent > 0) {
+      
+      // rounds earned/spent message to 2 decimal points
+      earnedSpent = income - expenses;
+
+      earnedSpent = Math.round(earnedSpent * 100);
+      earnedSpent = earnedSpent / 100;
+      
       System.out.println("You earned $" + (earnedSpent) + " more than you spent this month.");
     }
 
     else if(earnedSpent <= 0) {
+      
+      // rounds earned/spent message to 2 decimal points
+      earnedSpent = expenses - income;
+
+      earnedSpent = Math.round(earnedSpent * 100);
+      earnedSpent = earnedSpent / 100;
+      
       System.out.println("You spent $" + (earnedSpent) + " more than you earned this month.");
     }
     
