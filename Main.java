@@ -160,7 +160,7 @@ class Main {
       System.out.print("big spender.");
     }
 
-    else if(expenses - income > 0) {
+    else if(expenses - income >= 0) {
       System.out.print("spender.");
     }
 
