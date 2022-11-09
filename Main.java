@@ -10,7 +10,7 @@ class Main {
   
   public static void main(String[] args) {
 
-    int DAYS_IN_MONTH = 30; // default 31, changed for tests
+    int DAYS_IN_MONTH = 31; // default 31, changed for tests
 
     int incomeCount = 0;
     int expensesCount = 0;
@@ -121,7 +121,6 @@ class Main {
     if(earnedSpent > 0) {
       
       // rounds earned/spent message to 2 decimal points
-      earnedSpent = income - expenses;
 
       earnedSpent = Math.round(earnedSpent * 100);
       earnedSpent = earnedSpent / 100;
@@ -161,9 +160,6 @@ class Main {
       System.out.print("spender.");
     }
 
-    else {
-      System.out.print("zero.");
-    }
 
     // custom message
     System.out.print("\n<< your custom message here >>");
