@@ -1,6 +1,8 @@
 /*
 
 - uses classes
+- reduce redundancy
+- methods
 
 */
 
