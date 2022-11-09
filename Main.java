@@ -52,7 +52,7 @@ class Main {
     int monthlyOrDaily = scanner.nextInt();
 
     // ask # of categories of expenses
-    System.out.print("How many categories of expenses? ");
+    System.out.print("How many categories of expense? ");
 
     int expenseCategories = scanner.nextInt();
 
