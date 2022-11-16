@@ -12,7 +12,7 @@ class Main {
   
   public static void main(String[] args) {
 
-    int DAYS_IN_MONTH = 31; // default 31, changed for tests
+    final int DAYS_IN_MONTH = 31; // default 31, changed for tests
 
     int incomeCount = 0;
     int expensesCount = 0;
