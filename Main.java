@@ -66,12 +66,7 @@ class Main {
 
     System.out.println();
 
-    // calculate monthly vs daily
-
-    if(monthlyOrDaily == 2) {
-      expenses *= DAYS_IN_MONTH;
-    }
-
+    System.out.println();
     
     /*
 /////////////////////////
@@ -79,7 +74,11 @@ class Main {
 /////////////////////////
     */
 
-    System.out.println();
+    // calculate monthly vs daily
+
+    if(monthlyOrDaily == 2) {
+      expenses *= DAYS_IN_MONTH;
+    }
 
     // rounding income and expenses to 2 decimal points
     double dailyIncome = income / DAYS_IN_MONTH;
